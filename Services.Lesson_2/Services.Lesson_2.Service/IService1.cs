@@ -8,16 +8,56 @@ using System.Text;
 
 namespace Services.Lesson_2.Service
 {
+    public class LibraryService : ILibraryService
+    {
+        private static Dictionary<Book,bool> library;        
+
+        public void AddBook(Book book)
+        {
+            library.Add(book,true);
+        }
+
+        public Book GetBook(int id)
+        {
+            return library.Keys.Where(b => b.id == id).First();
+        }
+
+        public Book GetBookInfoById(int Id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Book> GetBooksInfoByAuthor(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Book ReturnBook(int id)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
-    public interface IService1
+    public interface ILibraryService
     {
 
         [OperationContract]
-        string GetData(int value);
+        void AddBook(Book book);
+        
+        [OperationContract]
+        Book GetBookInfoById(int id);
 
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        List<Book> GetBooksInfoByAuthor(string name);
+
+        [OperationContract]
+        Book GetBook(int id);
+
+        [OperationContract]
+        Book ReturnBook(int id);
 
         // TODO: Add your service operations here
     }
@@ -29,18 +69,18 @@ namespace Services.Lesson_2.Service
     {      
 
         [DataMember]
-        public int Id { get; set; }
+        public int id { get; set; }
 
         [DataMember]
-        public string Name { get; set; }
+        public string name { get; set; }
 
         [DataMember]
-        public string Author { get; set; }
+        public string author { get; set; }
 
         [DataMember]
-        public DateTime Year { get; set; }
+        public DateTime year { get; set; }
 
         [DataMember]
-        public string Type { get; set; }
+        public string bookType { get; set; }
     }
 }

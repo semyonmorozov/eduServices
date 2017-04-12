@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7708abe4-2ec7-472a-9e88-0a326be62a2d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8886/ls" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Meta.xsd" MetadataType="Schema" ID="e60846b0-b800-4766-8c1b-7a27d7245d7e" SourceId="1" SourceUrl="http://localhost:8886/ls/Meta?xsd=xsd2" />
+    <MetadataFile FileName="Meta.disco" MetadataType="Disco" ID="923d5e78-95e3-4308-ade9-ec284ac2671c" SourceId="1" SourceUrl="http://localhost:8886/ls/Meta?disco" />
+    <MetadataFile FileName="LibraryService1.wsdl" MetadataType="Wsdl" ID="71d42abd-0a11-4ef3-ad33-9b2381b92b58" SourceId="1" SourceUrl="http://localhost:8886/ls/Meta?wsdl" />
+    <MetadataFile FileName="Meta1.xsd" MetadataType="Schema" ID="c1d4262f-5ac9-4f40-a7d0-1cc8c556b0e7" SourceId="1" SourceUrl="http://localhost:8886/ls/Meta?xsd=xsd0" />
+    <MetadataFile FileName="Meta2.xsd" MetadataType="Schema" ID="195d70f1-23a9-4df6-a423-1ec82cd8cb29" SourceId="1" SourceUrl="http://localhost:8886/ls/Meta?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
